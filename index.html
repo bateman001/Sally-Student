@@ -6,6 +6,9 @@
 </head>
 
 <body>
+	<div id="application-root">
+	
+	</div>
 </body>
 	<script src="https://unpkg.com/react@16/umd/react.development.js">
 	</script>
@@ -15,5 +18,50 @@
 	
 	<script src="https://unpkg.com/babel-standalone@6/babel.min.js">
 	</script>
-	<script src="main.js"></script>
+	<script type="text/babel">
+function App(){
+return (
+
+		<header>
+			<h1>Sally Student</h1>
+		</header>
+		
+		<main>
+			<h2>About me</h2>
+			<p>Hello, I am a front end developer. I use HTML, CSS, Javascript, and React!</p>
+			<img src="https://ia.media-imdb.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_UX214_CR0,0,214,317_AL_.jpg" alt="me"/>
+		</main>
+		
+		<section className="education">
+			<ul>
+				<li>DCCCD Richland College</li>
+				<li>Thinkful Software Engineering Bootcamp</li>
+			</ul>
+		</section>
+		
+		<section className="employment">
+			<h2>Employment History</h2>
+			<ul>
+				<li>Big Important Company</li>
+					<ul>
+						<li><strong>Front End Developer</strong></li>
+						<li>May 2019 - April 2020</li>
+						<li>Used React to create websites</li>
+					</ul>
+				
+				<li>Small Unimportant Company</li>
+					<ul>
+						<li><strong>Front End Developer</strong></li>
+						<li>April 2017 - April 2019</li>
+						<li>Used React to create websites</li>
+					</ul>
+			</ul>
+		</section>
+	   );
+
+}
+
+ReactDOM.render(<App />, document.querySelector("#application-root"));
+	
+</script>
 </html>
