@@ -20,7 +20,7 @@
 	</script>
 	<script type="text/babel">
 function App(){
-return (
+return (<React.Fragment>
 
 		<header>
 			<h1>Sally Student</h1>
@@ -39,7 +39,7 @@ return (
 			</ul>
 		</section>
 		
-		<section className="employment">
+	<section className="employment">
 			<h2>Employment History</h2>
 			<ul>
 				<li>Big Important Company</li>
@@ -57,6 +57,8 @@ return (
 					</ul>
 			</ul>
 		</section>
+		
+		</React.Fragment>
 	   );
 
 }
